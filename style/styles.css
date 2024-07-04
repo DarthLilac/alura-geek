@@ -1,0 +1,88 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f3f3;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #6236FF;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    width: 100%;
+}
+
+.products, .add-product {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 2rem;
+    margin: 1rem 0;
+    width: 80%;
+}
+
+.products h2, .add-product h2 {
+    margin-top: 0;
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.product {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: 200px;
+    text-align: center;
+    background-color: #6C36FF;
+    color: white;
+}
+
+footer {
+    background-color: #6236FF;
+    color: white;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    position: fixed;
+    bottom: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form button {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    background-color: #6C36FF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:disabled {
+    background-color: #ccc;
+}
