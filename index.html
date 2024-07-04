@@ -5,33 +5,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>AluraGeek</title>
     <link rel="stylesheet" href="./style/styles.css">
+    <link rel="stylesheet" href="./style/reset.css">
 </head>
 <body>
     <header>
-        <h1>AluraGeek</h1>
+        <div class="header-content">
+            <img src="./img/hearts.png" alt="corações" class="hearts">
+            <h1>AluraGeek</h1>
+        </div>
     </header>
-    <main>
-        <section class="products">
-            <h2>Meus Produtos:</h2>
-            <div class="product-list" id="product-list">
-                <!-- Produtos serão inseridos aqui pelo JavaScript -->
-            </div>
+
+    <main class="main_container">
+        <section>
+            <h1 class="titulo-produtos">Meus Produtos</h1>
+            <div data-product class="products-container"></div>
         </section>
-        <section class="add-product">
-            <h2>Adicionar Produto:</h2>
-            <form id="product-form">
-                <input type="text" id="product-name" placeholder="Nome..." required>
-                <input type="number" id="product-price" placeholder="Preço..." required>
-                <input type="text" id="product-image" placeholder="Imagem..." required>
-                <button type="submit">Guardar</button>
-                <button type="reset">Limpar</button>
+
+        <section>
+            <h1 class="adicionar-titulo">Adicionar Produtos</h1>
+            <form class="form-container" data-form>
+                <input data-name placeholder="Nome do produto" type="text" required>
+                <input data-price placeholder="Preço" type="text" required>
+                <input data-image placeholder="URL da imagem" type="text" required>
+                <div class="button-container">
+                    <div>
+                        <button type="submit" class="button-submit" id="button">Enviar</button>
+                    </div>
+                    <button type="reset" class="button-reset" id="button">Limpar</button>
+                </div>
             </form>
         </section>
     </main>
+
     <footer>
         <p>Desenvolvido por Andressa Rocha</p>
         <p>Alura LATAM - 2024</p>
     </footer>
-    <script src="scripts.js"></script>
+
+    <script type="module" src="./js/main.js"></script>
 </body>
 </html>
